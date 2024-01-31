@@ -4,7 +4,12 @@ const options = {
   pageDots: true,
   setGallerySize: false,
   arrowShapeL: {
-
+    x0: 1,
+    x1: 56,
+    y1: 62,
+    x2: 55,
+    y2: 48,
+    x3: 18
   }
 };
 
@@ -19,3 +24,7 @@ const carousel = document.querySelector('[carousel]');
 const slides = Array.from(document.getElementsByClassName('carousel-cell'));
 const flkty = new Flickity(carousel, options);
 
+// Event listener using bg position
+flkty.on('scroll', () => {
+  flkty.slides.forEach(setBgPosition);
+});
