@@ -1,2 +1,2 @@
 # parallax-slider
-Parallax Slider Project
+Parallax Slider Project with Flickity
